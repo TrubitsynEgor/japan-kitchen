@@ -1,7 +1,6 @@
 import { Container } from 'components/Container';
 import { Button } from 'components/UI/Button';
 import styles from './Header.module.scss';
-import cartImg from 'assets/cart.svg'
 import { ReactComponent as CartIcon } from 'assets/cart.svg';
 
 interface HeaderProps {

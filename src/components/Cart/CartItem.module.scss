@@ -1,0 +1,41 @@
+.cartItem {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 30px;
+	border-radius: 13px;
+	border: 1px solid var(--gray-500);
+	gap: 30px;
+	font-size: 24px;
+
+	& img {
+		width: 75px;
+		height: 75px;
+		object-fit: cover;
+		border-radius: 13px;
+	}
+
+	&Amount {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+
+	&BtnGroup {
+
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+
+		& button {
+			border: 1px solid var(--gray-500);
+			background-color: var(--accent-color);
+			border-radius: 4px;
+			font-size: 16px;
+
+			&:hover {
+				background-color: var(--accent-color-hover);
+			}
+		}
+	}
+}
