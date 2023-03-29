@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/japan-kitchen/static/css/main.a215482e.css",
+    "main.js": "/japan-kitchen/static/js/main.d2fe6a64.js",
+    "static/media/hero_bg.jpg": "/japan-kitchen/static/media/hero_bg.8fc205238ae188dd751e.jpg",
+    "static/media/meal_03.jpg": "/japan-kitchen/static/media/meal_03.1a584d4d2b56eea082db.jpg",
+    "static/media/meal_01.jpg": "/japan-kitchen/static/media/meal_01.9fd2dd798c7ae095e886.jpg",
+    "static/media/meal_04.jpg": "/japan-kitchen/static/media/meal_04.8c279331b8c34c900243.jpg",
+    "static/media/meal_02.jpg": "/japan-kitchen/static/media/meal_02.2cba0c6aa7c3a5e6d963.jpg",
+    "static/media/cart.svg": "/japan-kitchen/static/media/cart.8fc0cd3d3a563bdadd4c1dad36919eac.svg",
+    "index.html": "/japan-kitchen/index.html",
+    "main.a215482e.css.map": "/japan-kitchen/static/css/main.a215482e.css.map",
+    "main.d2fe6a64.js.map": "/japan-kitchen/static/js/main.d2fe6a64.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a215482e.css",
+    "static/js/main.d2fe6a64.js"
+  ]
+}
