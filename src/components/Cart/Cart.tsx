@@ -1,7 +1,6 @@
 import { IMeals } from 'types';
 import styles from './Cart.module.scss';
 import { CartItem } from './CartItem';
-import meal_01 from '../Meals/MealsImages/meal_01.jpg'
 import { formattedPrice } from 'utils/formattedPrice';
 import { Button } from 'components/UI/Button';
 import { useContext } from 'react';
