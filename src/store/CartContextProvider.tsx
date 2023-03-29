@@ -7,17 +7,51 @@ import { useReducer } from "react"
 
 const initCartState = {
 	items: [],
-	totalAmount: 0
+	totalAmount: 0,
 }
-const cartReducer = (state: typeof initCartState, action: any) => {
+const cartReducer = (state: any, action: any) => {
 	if (action.type === 'ADD_ITEM') {
-		const updatedItems = state.items.concat(action.item);
 		const updatedTotalAmount = state.totalAmount + (action.item.price) * action.item.amount
+		const existingCartItemIdx = state.items.findIndex((item: any) => item.id === action.item.id);
+		const existingCartItem = state.items[existingCartItemIdx]
+		let updatedItem;
+		let updatedItems;
+		if (existingCartItem) {
+			updatedItem = { ...existingCartItem, amount: existingCartItem.amount + action.item.amount }
+			updatedItems = [...state.items]
+			updatedItems[existingCartItemIdx] = updatedItem
+
+		} else {
+			updatedItem = {
+				...action.item
+			}
+			updatedItems = state.items.concat(updatedItem)
+		}
 		return {
 			items: updatedItems,
 			totalAmount: updatedTotalAmount
 		}
 	}
+	//========================================//
+	if (action.type === 'REMOVE_ITEM') {
+		const existingCartItemIdx = state.items.findIndex((item: ICartItems) => item.id === action.id);
+		const existingCartItem = state.items[existingCartItemIdx]
+		const updatedTotalAmount = state.totalAmount - existingCartItem.price;
+
+		let updatedItems;
+		if (existingCartItem.amount === 1) {
+			updatedItems = state.items.filter((item: ICartItems) => item.id !== action.id)
+		} else {
+			const updatedItem = { ...existingCartItem, amount: existingCartItem.amount - 1 }
+			updatedItems = [...state.items]
+			updatedItems[existingCartItemIdx] = updatedItem
+		}
+		return {
+			items: updatedItems,
+			totalAmount: updatedTotalAmount
+		}
+	}
+
 	return initCartState;
 }
 

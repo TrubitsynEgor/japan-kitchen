@@ -44,6 +44,9 @@ body {
 body[data-theme='dark'] {
   background-color: var(--gray-500);
 }
+body.lock {
+  overflow: hidden;
+}
 
 a {
   font-family: 'Space Mono', monospace;

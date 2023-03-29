@@ -7,6 +7,10 @@ import React from "react"
 const CartContext = React.createContext({
 	items: [
 		{
+			id: 0,
+			name: '',
+			price: 0,
+			img: '',
 			amount: 0
 		}
 	],
