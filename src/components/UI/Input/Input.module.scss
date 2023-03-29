@@ -1,0 +1,28 @@
+.input {
+	display: flex;
+	flex-direction: column;
+
+
+	& label {
+		color: var(--gray-400);
+	}
+
+	& input {
+		padding: 7px 14px;
+		color: var(--gray-400);
+		font-size: 16px;
+		font-weight: 700;
+		border: 1px solid var(--main-color);
+		background-color: transparent;
+		border-radius: 4px;
+
+		&:focus {
+			outline: none;
+			border: 2px solid var(--main-color-hover);
+		}
+
+		&::placeholder {
+			color: var(--gray-400);
+		}
+	}
+}

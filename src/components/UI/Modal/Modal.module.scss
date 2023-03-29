@@ -1,0 +1,35 @@
+.modal {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(#000, 0.5);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	&Wrapper {
+		background-color: var(--gray-50);
+		padding: 40px;
+		border-radius: 4px;
+		color: tomato;
+
+		& p {
+			font-size: 16px;
+			margin: 10px 0;
+		}
+	}
+
+	&Btn {
+		margin-top: 30px;
+		transition: all 0.3s ease 0s;
+
+		&:hover {
+			background-color: var(--main-color-hover);
+		}
+
+	}
+
+}

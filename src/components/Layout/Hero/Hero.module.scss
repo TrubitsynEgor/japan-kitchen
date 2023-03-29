@@ -1,0 +1,29 @@
+.hero {
+	padding: 120px 0;
+	height: 100%;
+	width: 100%;
+	background: url('../../../assets/hero_bg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	&Container {
+		padding: 30px;
+		background-color: rgba(#ffffff, 0.7);
+		display: flex;
+		justify-content: space-between;
+		border-radius: 13px;
+	}
+
+	& h1 {
+		font-size: 68px;
+		max-width: 600px;
+
+	}
+
+	& p {
+		color: black;
+		font-size: 26px;
+		max-width: 400px;
+	}
+}

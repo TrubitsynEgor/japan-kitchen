@@ -1,0 +1,20 @@
+.mealList {
+	padding-top: 30px;
+
+
+	& ul {
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+		justify-content: center;
+		gap: 30px;
+	}
+
+	& img {
+		width: 300px;
+		height: 200px;
+		border-radius: 13px;
+		object-fit: cover;
+
+	}
+}
