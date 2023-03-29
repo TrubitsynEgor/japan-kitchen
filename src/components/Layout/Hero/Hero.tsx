@@ -2,7 +2,7 @@ import { Container } from 'components/Container';
 import styles from './Hero.module.scss';
 
 interface HeroProps {
-  className: string
+  className?: string
 }
 
 export const Hero = ({ className }: HeroProps) => {

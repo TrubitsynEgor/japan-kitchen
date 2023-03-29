@@ -1,3 +1,5 @@
+import { useContext } from 'react';
+import CartContext from 'store/cartContext';
 import { IMeals } from 'types';
 import { MealItem } from './MealItem';
 import styles from './MealList.module.scss';
@@ -30,6 +32,8 @@ interface MealListProps {
 
 
 export const MealList = ({ className }: MealListProps) => {
+
+
 
   return (
     <section className={`${styles.mealList} + ${className}`}>

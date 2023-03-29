@@ -28,14 +28,19 @@
 		gap: 4px;
 
 		& button {
-			border: 1px solid var(--gray-500);
+			border: none;
 			background-color: var(--accent-color);
 			border-radius: 4px;
 			font-size: 16px;
+			cursor: pointer;
+			transition: all 0.3s ease 0s;
+
 
 			&:hover {
 				background-color: var(--accent-color-hover);
 			}
 		}
 	}
+
+
 }

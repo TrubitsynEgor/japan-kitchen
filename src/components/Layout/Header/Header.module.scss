@@ -4,6 +4,7 @@
 	padding: 15px 0;
 	position: fixed;
 	width: 100%;
+	z-index: 100;
 
 	&Container {
 		display: flex;
@@ -18,6 +19,8 @@
 	}
 
 	&Btn {
+		background-color: transparent;
+
 		& svg {
 			width: 30px;
 			height: 30px;

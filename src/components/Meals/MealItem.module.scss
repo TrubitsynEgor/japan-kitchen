@@ -6,6 +6,8 @@
 	gap: 10px;
 	border-radius: 13px;
 	box-shadow: 0 7px 10px rgba(#000, 0.1);
+	padding-bottom: 20px;
+	position: relative;
 
 	& h4 {
 		font-size: 20px;
@@ -27,7 +29,7 @@
 		cursor: pointer;
 		border: none;
 		transition: all 0.3s ease 0s;
-		margin-bottom: 20px;
+
 
 
 		&:hover {
@@ -36,4 +38,37 @@
 		}
 	}
 
+	&Wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		gap: 10px;
+
+	}
+
+	&Input {
+
+
+
+		& input {
+			max-width: 70px;
+			border: 1px solid var(--accent-color);
+			border-radius: 13px;
+
+			&:focus {
+
+				border: 2px solid var(--accent-color-hover);
+			}
+		}
+	}
+
+	&Error {
+		position: absolute;
+		bottom: 0;
+		left: 25%;
+		color: tomato;
+		font-size: 20px;
+
+	}
 }

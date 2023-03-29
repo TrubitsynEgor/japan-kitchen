@@ -3,7 +3,7 @@ import { MealList } from './MealList';
 import styles from './Meals.module.scss';
 
 interface MealsProps {
-  className: string
+  className?: string
 }
 
 export const Meals = ({ className }: MealsProps) => {

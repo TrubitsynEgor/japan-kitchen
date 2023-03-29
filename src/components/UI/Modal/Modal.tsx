@@ -4,15 +4,15 @@ import styles from './Modal.module.scss';
 interface ModalProps {
   className?: string
   children: ReactNode
-  onHandleModalVisible?: () => void
+  closeCartHandler?: () => void
 
 }
 
 
-export const Modal = ({ className, children, onHandleModalVisible }: ModalProps) => {
+export const Modal = ({ className, children, closeCartHandler }: ModalProps) => {
 
   return (
-    <div className={`${styles.modal} + ${className}`} onClick={onHandleModalVisible}>
+    <div className={`${styles.modal} + ${className}`} onClick={closeCartHandler}>
       {children}
     </div>
   )
