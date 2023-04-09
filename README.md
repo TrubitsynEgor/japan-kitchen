@@ -1,1 +1,1 @@
-# TypeScript курс. Проект GitHub user finder
+# https://trubitsynegor.github.io/japan-kitchen/
